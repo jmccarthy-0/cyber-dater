@@ -1,0 +1,33 @@
+.intro-content {
+    display: grid;
+    place-content: center;
+    width:100%;
+    height:100%;
+    background: #000;
+    color: var(--pink);
+
+    padding-inline: 2rem;
+}
+
+.intro-content__title,
+.intro-content__subheading {
+    text-align:center;
+}
+
+.intro-content__title {
+    font-size: 2rem;
+    line-height:1.15;
+    margin-bottom: .5rem;
+   
+}
+
+.intro-content__subheading {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.intro-content > p {
+    line-height: 1.5;
+    width: min(100%, 55ch);
+    margin: 0 auto 1rem;
+}

@@ -1,0 +1,32 @@
+.btn {
+    --btn-size: 2rem;
+
+    font-weight: bold;
+    font-size: 1rem;
+    
+    display: block;
+    flex: 0 0 var(--btn-size);
+    width:  var(--btn-size);
+    height: var(--btn-size);
+    border-radius: 0;
+    border: 4px outset var(--mint);
+    cursor:pointer;
+    
+    color: var(--pink-200);
+    background-color: var(--mint);
+}
+@media (min-width:768px) {
+    .btn {
+        --btn-size: 3rem;
+
+        font-size: 1.25rem;
+    }
+}
+
+.btn:active {
+    border-style:inset;
+}
+
+.btn > svg {
+    fill: var(--pink-200);
+}
