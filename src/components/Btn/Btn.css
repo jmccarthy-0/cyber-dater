@@ -4,16 +4,21 @@
     font-weight: bold;
     font-size: 1rem;
     
-    display: block;
+    -webkit-appearance: none;
+    display: grid;
+    place-content:center;
     flex: 0 0 var(--btn-size);
     width:  var(--btn-size);
     height: var(--btn-size);
+    height: 2rem;
     border-radius: 0;
     border: 4px outset var(--mint);
     cursor:pointer;
     
     color: var(--pink-200);
     background-color: var(--mint);
+
+    
 }
 @media (min-width:768px) {
     .btn {
@@ -29,4 +34,12 @@
 
 .btn > svg {
     fill: var(--pink-200);
+    width: 1rem;
+    height:1rem;
+}
+@media (min-width:960px) {
+    .btn > svg {
+        width: 1.5rem;
+        height:1.5rem;
+    }
 }
